@@ -1,32 +1,49 @@
 import psycopg2
 from psycopg2 import sql
+from typing import Optional
 from Credentials import DB_CONFIG, logger
 
-
 class DataBase:
-    def __init__(self):
-        self.connection = None
-        self.db_config = DB_CONFIG
+    """
+    A class to manage the database connection.
+    """
 
-    def connect(self):
-        """Устанавливает соединение с базой данных."""
+    def __init__(self) -> None:
+        """
+        Initializes the DataBase object and connects to the database.
+        """
+        self.connection: Optional[psycopg2.extensions.connection] = None
+        self.db_config: dict = DB_CONFIG
+        self.connect()
+
+    def connect(self) -> None:
+        """
+        Establishes a connection to the database.
+        """
         try:
             self.connection = psycopg2.connect(**self.db_config)
             logger.info("Connected to Database")
         except psycopg2.Error as e:
             logger.error(f"Database connection error: {e}")
 
-    def disconnect(self):
-        """Закрывает соединение с базой данных."""
+    def disconnect(self) -> None:
+        """
+        Closes the connection to the database.
+        """
         if self.connection:
             self.connection.close()
             logger.info("Connection closed")
 
-    def get_connection(self):
-        """Возвращает текущее соединение с базой данных."""
+    def get_connection(self) -> Optional[psycopg2.extensions.connection]:
+        """
+        Returns the current connection to the database.
+        """
         return self.connection
 
-    def commit(self):
+    def commit(self) -> None:
+        """
+        Commits the current transaction.
+        """
         if self.connection:
             self.connection.commit()
-        logger.info("Database commited")
+            logger.info("Database committed")

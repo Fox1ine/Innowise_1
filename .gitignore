@@ -1,20 +1,31 @@
+# Ignore virtual environments
 .venv/
 
+# Ignore log files
 *.log
 
+# Ignore JSON files in any directory
+*.json
+
+# Ignore XML files in any directory
+*.xml
+
+# Ignore data directory JSON files
 data/*.json
 
+# Ignore credentials file
 Credentials.py
 
+# Ignore IDE and editor configurations
 .idea/
-
 .vscode/
 
+# Ignore Python cache and temporary files
 __pycache__/
-*.py[cod]
+*.py[co]
 
+# Ignore OS and editor-specific files
 .DS_Store
 Thumbs.db
-
 *.swp
 *.swo
