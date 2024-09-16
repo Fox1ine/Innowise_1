@@ -28,7 +28,6 @@ class ToJson:
         try:
             """Converts data into a list of dictionaries."""
             formatted_data = [{columns[i]: row[i] for i in range(len(columns))} for row in data]
-            print(formatted_data)
             logger.info("Data converted to a list of dictionaries successfully.")
 
             with open(file_name, 'w') as json_file:
