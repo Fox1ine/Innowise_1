@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: my-python-app
+    environment:
+      - DATABASE_URL=postgresql://postgres:12345@db:5438/postgres
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    command: python main.py
+
+  db:
+    image: postgres:13
+    container_name: my-postgres-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5438:5438"
+
+volumes:
+  postgres_data:
