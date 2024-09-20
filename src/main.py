@@ -1,6 +1,6 @@
 from src.database import Database
 from src.rooms_manager import RoomsManager
-from src.selector import DataSelector
+from src.data_selector import DataSelector
 from src.students_manager import StudentsManager
 from src.data_loader import DataLoader
 from src.json_converter import JsonConverter
