@@ -5,7 +5,7 @@
 # Ignore IDE and editor configurations
 .idea/
 .vscode/
-output
+
 # Ignore Python cache and temporary files
 __pycache__/
 *.py[co]
