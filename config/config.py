@@ -12,7 +12,7 @@ TEST_OUTPUT_PATH_DIR = os.path.join(BASE_DIR, r'tests\output_test')
 
 if ENVIRONMENT != 'test':
     LOG_DIR = os.path.join(BASE_DIR, 'logs')
-    LOG_FILE = os.path.join(LOG_DIR, 'inwise.log')
+    LOG_FILE = os.path.join(LOG_DIR, 'loggers.log')
     if not os.path.exists(LOG_DIR):
         os.makedirs(LOG_DIR)
 
