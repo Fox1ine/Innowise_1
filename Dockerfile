@@ -15,3 +15,4 @@ COPY . .
 
 # Define the default command to run when the container starts
 CMD ["python", "main.py"]
+

@@ -1,13 +1,14 @@
-import Queries
-from Credentials import *
+from src import queries
+from config.config import *
 from typing import Any, Optional, List, Tuple
+
 
 class BaseManager:
     """
     Base manager class for handling database operations.
     """
 
-    def __init__(self, db: Any) -> None:
+    def __init__(self, db) -> None:
         """
         Initializes the BaseManager with a database connection.
 
@@ -30,6 +31,7 @@ class BaseManager:
             cursor.execute(query, params)
             connection.commit()
             logger.info("Query executed successfully")
+
         except Exception as e:
             connection.rollback()
             logger.error(f"Query failed due to {e}")
@@ -99,11 +101,12 @@ class BaseManager:
         try:
             connection = self.db.get_connection()
             cursor = connection.cursor()
-            cursor.execute(Queries.q_create_index)
+            cursor.execute(queries.q_create_index)
             connection.commit()
             logger.info("Indexes created successfully")
         except Exception as e:
             connection.rollback()
-            logger.error(f"Index creation failed due to {e}")
+            logger.warning(f"Index creation failed due to {e}")
+
         finally:
             cursor.close()

@@ -1,6 +1,6 @@
-from BaseManager import BaseManager
-from Credentials import *
-import Queries
+from src.base_manager import BaseManager
+from config.config import *
+import src.queries
 from typing import List, Dict, Any
 
 
@@ -10,7 +10,7 @@ class StudentsManager(BaseManager):
     Inherits from BaseManager.
     """
 
-    def __init__(self, db: Any) -> None:
+    def __init__(self, db) -> None:
         """
         Initializes the StudentsManager with a database connection.
 
@@ -23,7 +23,7 @@ class StudentsManager(BaseManager):
         """
         Creates the 'students' table in the database and sets up necessary indexes.
         """
-        create_student_table_query = Queries.q_create_student_table
+        create_student_table_query = src.queries.q_create_student_table
         super().create_table(create_student_table_query)
         logger.info("Table 'students' created successfully")
         super().create_indexes()
@@ -32,7 +32,7 @@ class StudentsManager(BaseManager):
         """
         Drops the 'students' table from the database.
         """
-        drop_student_table_query = Queries.q_drop_student_table_query
+        drop_student_table_query = src.queries.q_drop_student_table_query
         super().drop_table(drop_student_table_query)
         logger.info('Table "students" dropped successfully')
 
@@ -44,10 +44,10 @@ class StudentsManager(BaseManager):
             data: A list of dictionaries, where each dictionary contains student information.
         """
         formatted_data = []
-        add_data_query = Queries.q_add_data_query
+        add_data_query = src.queries.q_add_data_query
 
         for i in data:
-            row_tuple = (i['id'], i['name'], i['birthday'], i['sex'], i['room'])
+            row_tuple = (i["id"], i["name"], i["birthday"], i["sex"], i["room"])
             formatted_data.append(row_tuple)
 
         super().add_data(add_data_query, formatted_data)

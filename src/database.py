@@ -1,9 +1,9 @@
 import psycopg2
-from psycopg2 import sql
 from typing import Optional
-from Credentials import DB_CONFIG, logger
+from config.config import DB_CONFIG, logger
 
-class DataBase:
+
+class Database:
     """
     A class to manage the database connection.
     """
@@ -32,7 +32,7 @@ class DataBase:
         """
         if self.connection:
             self.connection.close()
-            logger.info("Connection closed")
+            logger.info("Connection with DB was closed")
 
     def get_connection(self) -> Optional[psycopg2.extensions.connection]:
         """
@@ -46,4 +46,4 @@ class DataBase:
         """
         if self.connection:
             self.connection.commit()
-            logger.info("Database committed")
+            logger.info("Database committed ")
