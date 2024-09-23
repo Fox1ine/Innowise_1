@@ -1,0 +1,76 @@
+2024-09-20 10:58:11,336 - config.config - INFO - Connected to Database
+2024-09-20 10:58:11,345 - config.config - INFO - Connected to Database
+2024-09-20 10:58:11,351 - config.config - INFO - Table 'students' created successfully
+2024-09-20 10:58:11,353 - config.config - WARNING - Index creation failed due to relation "idx_students_room_sex" already exists
+
+2024-09-20 10:58:11,854 - config.config - INFO - Rooms data added successfully.
+2024-09-20 10:58:11,854 - config.config - INFO - Data loaded successfully 
+2024-09-20 10:58:11,855 - config.config - INFO - Rooms table created successfully
+2024-09-20 10:58:11,856 - config.config - INFO - Table 'students' created successfully
+2024-09-20 10:58:11,858 - config.config - WARNING - Index creation failed due to relation "idx_students_room_sex" already exists
+
+2024-09-20 10:58:12,227 - config.config - INFO - Rooms data added successfully.
+2024-09-20 10:58:12,227 - config.config - INFO - Data loaded successfully 
+2024-09-20 10:58:12,227 - config.config - INFO - Database committed 
+2024-09-20 10:58:16,102 - config.config - INFO - Students data added successfully.
+2024-09-20 10:58:16,102 - config.config - INFO - Data loaded successfully 
+2024-09-20 10:58:16,103 - config.config - INFO - Database committed 
+2024-09-20 10:58:16,108 - config.config - INFO - get_rooms_with_student_count worked successfully.
+2024-09-20 10:58:16,115 - config.config - INFO - get_avg_min_age_in_room worked successfully.
+2024-09-20 10:58:16,123 - config.config - INFO - get_max_age_diff_room worked successfully.
+2024-09-20 10:58:16,127 - config.config - INFO - get_mixedsex_rooms worked successfully.
+2024-09-20 10:58:16,127 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 10:58:16,130 - config.config - INFO - Data successfully saved to getting_rooms_with_st_count.json
+2024-09-20 10:58:16,130 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 10:58:16,130 - config.config - INFO - Data successfully saved to getting_five_rooms_with_min_avg_age.json
+2024-09-20 10:58:16,130 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 10:58:16,130 - config.config - INFO - Data successfully saved to getting_rooms_with_max_age_diff.json
+2024-09-20 10:58:16,131 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 10:58:16,133 - config.config - INFO - Data successfully saved to getting_mixed_sex_rooms.json
+2024-09-20 10:58:16,133 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 10:58:16,136 - config.config - INFO - Data successfully saved to getting_rooms_with_st_count.xml
+2024-09-20 10:58:16,137 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 10:58:16,137 - config.config - INFO - Data successfully saved to getting_five_rooms_with_min_avg_age.xml
+2024-09-20 10:58:16,137 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 10:58:16,137 - config.config - INFO - Data successfully saved to getting_rooms_with_max_age_diff.xml
+2024-09-20 10:58:16,137 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 10:58:16,139 - config.config - INFO - Data successfully saved to getting_mixed_sex_rooms.xml
+2024-09-20 10:58:16,139 - config.config - INFO - Connection with DB was closed
+2024-09-20 11:19:13,035 - config.config - INFO - Connected to Database
+2024-09-20 11:19:13,043 - config.config - INFO - Connected to Database
+2024-09-20 11:19:13,046 - config.config - INFO - Table 'students' created successfully
+2024-09-20 11:19:13,047 - config.config - WARNING - Index creation failed due to relation "idx_students_room_sex" already exists
+
+2024-09-20 11:19:13,471 - config.config - INFO - Rooms data added successfully.
+2024-09-20 11:19:13,471 - config.config - INFO - Data loaded successfully 
+2024-09-20 11:19:13,473 - config.config - INFO - Rooms table created successfully
+2024-09-20 11:19:13,474 - config.config - INFO - Table 'students' created successfully
+2024-09-20 11:19:13,475 - config.config - WARNING - Index creation failed due to relation "idx_students_room_sex" already exists
+
+2024-09-20 11:19:13,904 - config.config - INFO - Rooms data added successfully.
+2024-09-20 11:19:13,904 - config.config - INFO - Data loaded successfully 
+2024-09-20 11:19:13,904 - config.config - INFO - Database committed 
+2024-09-20 11:19:18,215 - config.config - INFO - Students data added successfully.
+2024-09-20 11:19:18,215 - config.config - INFO - Data loaded successfully 
+2024-09-20 11:19:18,216 - config.config - INFO - Database committed 
+2024-09-20 11:19:18,220 - config.config - INFO - get_rooms_with_student_count worked successfully.
+2024-09-20 11:19:18,226 - config.config - INFO - get_avg_min_age_in_room worked successfully.
+2024-09-20 11:19:18,234 - config.config - INFO - get_max_age_diff_room worked successfully.
+2024-09-20 11:19:18,237 - config.config - INFO - get_mixedsex_rooms worked successfully.
+2024-09-20 11:19:18,237 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 11:19:18,241 - config.config - INFO - Data successfully saved to getting_rooms_with_st_count.json
+2024-09-20 11:19:18,241 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 11:19:18,242 - config.config - INFO - Data successfully saved to getting_five_rooms_with_min_avg_age.json
+2024-09-20 11:19:18,242 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 11:19:18,242 - config.config - INFO - Data successfully saved to getting_rooms_with_max_age_diff.json
+2024-09-20 11:19:18,242 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 11:19:18,244 - config.config - INFO - Data successfully saved to getting_mixed_sex_rooms.json
+2024-09-20 11:19:18,244 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 11:19:18,247 - config.config - INFO - Data successfully saved to getting_rooms_with_st_count.xml
+2024-09-20 11:19:18,248 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 11:19:18,248 - config.config - INFO - Data successfully saved to getting_five_rooms_with_min_avg_age.xml
+2024-09-20 11:19:18,248 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 11:19:18,248 - config.config - INFO - Data successfully saved to getting_rooms_with_max_age_diff.xml
+2024-09-20 11:19:18,248 - config.config - INFO - Data converted to a list of dictionaries successfully.
+2024-09-20 11:19:18,250 - config.config - INFO - Data successfully saved to getting_mixed_sex_rooms.xml
+2024-09-20 11:19:18,250 - config.config - INFO - Connection with DB was closed

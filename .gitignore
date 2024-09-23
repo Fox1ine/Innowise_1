@@ -1,0 +1,19 @@
+# Ignore virtual environments
+.venv/
+
+
+# Ignore IDE and editor configurations
+.idea/
+.vscode/
+
+# Ignore Python cache and temporary files
+__pycache__/
+*.py[co]
+.pytest_cache/
+tests/.pytest_cache/
+
+# Ignore OS and editor-specific files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
